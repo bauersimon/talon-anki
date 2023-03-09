@@ -1,6 +1,6 @@
 # talon-anki
 
-Memorize [talon](https://talonvoice.com/) commands with [Anki](https://apps.ankiweb.net/).
+Memorize [talon](https://talonvoice.com/) commands with [Anki](https://apps.ankiweb.net/). Essentially just generates Anki files from `.csv` files.
 
 ## Currently Supported
 
@@ -8,9 +8,8 @@ Memorize [talon](https://talonvoice.com/) commands with [Anki](https://apps.anki
 
 ## Downloading
 
-- `.csv` directly from GitHub
-- `.apkg` via [bauersimon.github.io/talon-anki](https://bauersimon.github.io/talon-anki)
+via [bauersimon.github.io/talon-anki](https://bauersimon.github.io/talon-anki)
 
 ## Adding Commands
 
-Add a `.csv` under `decks/csv` and run `builder.py`.
+Add a `.csv` under `decks/csv` and run `generator.py`.

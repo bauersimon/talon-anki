@@ -43,12 +43,14 @@ def save_deck(items: List[Tuple[str, str]], p: str):
 def batch(source: str, target: str):
     for f in listdir(source):
         d = read_csv(path.join(source, f))
-        save_deck(d, path.join(target, path.splitext(f)[0]+'.apkg'))
+        t = path.join(target, path.splitext(f)[0]+'.apkg')
+        save_deck(d, t)
+        print(f'saved {t}')
 
 
 if __name__ == "__main__":
     if len(argv) == 1:
-        makedirs(path.join('decks', 'pkg'), exist_ok=True)
-        batch(path.join('decks', 'pkg'), path.join('decks', 'apkg'))
+        makedirs(path.join('decks', 'apkg'), exist_ok=True)
+        batch(path.join('decks', 'csv'), path.join('decks', 'apkg'))
     else:
         batch(argv[1], argv[2])

@@ -131,3 +131,5 @@ dmypy.json
 # Generated files.
 
 decks/apkg/*
+decks/index.html
+.github/workflows/static.yml
